@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Videobakgrund – Labb 3.2</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Själva videobakgrunden -->
+    <video class="bg-video" autoplay muted loop>
+        <source src="background.mp4" type="video/mp4">
+        Din webbläsare stödjer inte video-taggen.
+    </video>
+
+    <!-- Innehåll ovanpå videon -->
+    <div class="content">
+        <header>
+            <h1>Videobakgrund – Moment 3.2</h1>
+            <p>Exempel på videobakgrund utan ljud med HTML &amp; CSS.</p>
+        </header>
+
+        <main class="card">
+            <h2>Teknik som används</h2>
+            <p>
+                På den här sidan används ett <code>&lt;video&gt;</code>-element som placeras
+                i bakgrunden med hjälp av CSS (<code>position: fixed</code>, 
+                <code>min-width: 100%</code>, <code>min-height: 100%</code>).
+                Videon är inställd på <code>autoplay</code>, <code>muted</code> och 
+                <code>loop</code> så att den spelas upp automatiskt, utan ljud, och
+                upprepas kontinuerligt.
+            </p>
+            <p>
+                Innehållet på sidan (den här rutan) ligger ovanpå videon med hjälp av
+                <code>position: relative</code> och ett högre <code>z-index</code> än videon.
+            </p>
+
+            <h3>Val av format</h3>
+            <p>
+                Videon är exporterad som <strong>MP4 (H.264)</strong>, vilket har brett stöd
+                i moderna webbläsare och ger bra balans mellan kvalitet och filstorlek.
+                Ljudspåret har tagits bort för att uppfylla kravet på videobakgrund utan ljud.
+            </p>
+
+            <h3>Källa / guide</h3>
+            <p>
+                Som inspiration och referens har jag utgått från en guide om videobakgrunder,
+                till exempel:
+                <a href="https://www.w3schools.com/howto/howto_css_fullscreen_video.asp" target="_blank" rel="noopener">
+                    Exempel på fullskärms video-bakgrund
+                </a>.
+            </p>
+        </main>
+    </div>
+
+</body>
+</html>
